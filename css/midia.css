@@ -1,0 +1,148 @@
+@media(max-width: 1200px){
+    .header-nav{
+        gap: 48px
+    }
+
+    .card-img-top {
+        border-top-left-radius: 42px;
+        border-top-right-radius: 42px;
+    }
+
+    .wrap-1{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .wrap-2{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .wrap-3{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .wrap-4{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .item-descr{
+        margin-bottom: 26px;
+    }
+}
+
+@media(max-width: 992px) {
+
+    .header-nav{
+        gap: 59px;
+    }
+
+    .hero-title{       
+        font-size: 50px;       
+    }
+
+    .card-img-top {
+        border-top-left-radius: 43px;
+        border-top-right-radius: 43px;
+    }
+
+    .wrap-1{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .wrap-2{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .wrap-3{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .wrap-4{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .item-descr{
+        min-height: 102px;
+    }
+
+    .about-cart{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .item-content{  
+        height: 100%;
+    }
+
+    .img-picture{
+        object-fit: contain;
+    }
+}
+
+@media(max-width: 768px) {
+    .header-container{
+        display: flex;
+        align-items: center;
+    }
+
+    .header-nav{
+        overflow-x: auto;
+        max-width: 100%;
+    }
+
+    .header-link{
+        font-size: 18px;
+        flex-shrink: 0;
+    }
+
+    .hero-title{
+        font-size: 50px;
+    }
+    
+    .hero-img{
+        display: none;
+    }
+
+    .about-picture {
+
+        align-items: baseline;
+    }
+
+}
+
+@media(max-width: 768px){
+    .hero-title{
+        font-size: 30px;
+    }
+
+    .hero-descr{
+        font-size: 16px;
+    }
+
+    .about-picture{
+        display: none;
+    }
+
+    .wrap-title{
+        font-size: 20px;
+    }
+
+    .about-cart{
+        flex-wrap: nowrap;
+    }
+
+    .title-section {
+        font-size: 20px;
+    }
+
+    .courses-title {
+        font-size: 20px;
+    }
+}
