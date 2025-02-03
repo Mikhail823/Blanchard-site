@@ -4,15 +4,25 @@
         flex-wrap: wrap;
     }
 
+    .nav__list{
+        gap: 96px;
+    }
+
     .gallery__wrap {
         flex-wrap: wrap;
         row-gap: 30px;
-      }
+    }
 }
 @media(max-width: 1024px){
 
-    .header__container{
-        flex-direction: column-reverse;
+    .logo {
+        flex-grow: 123;
+        order: 0;
+    }
+
+    .nav {
+        flex-grow: 0.5;
+        order: 3;
     }
 
     .gallery__wrap {
