@@ -328,7 +328,8 @@
                 <div class="center-container">
                     <form class="shourum_form" action="#" method="post">
                         <input type="text" name="name" id="name" class="input-center" placeholder="Имя*" required="true">
-                        <input type="tel" name="tel" id="tel" class="input-center" placeholder="Телефон*" required="true">
+                        <input type="tel" name="tel" id="tel" class="input-center input-phone" placeholder="Телефон*" 
+                        required="true" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" >
                         <button class="btn btn-input" type="submit">
                             Заказать обратный звонок
                         </button>
