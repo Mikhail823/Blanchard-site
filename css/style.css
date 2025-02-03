@@ -264,11 +264,6 @@ a{
     justify-content: space-between;
 }
 
-.gallery__item{
-    width: 350px;
-    height: 350px;
-}
-
 .gallery__list{
     display: -webkit-box;
     display: -ms-flexbox;

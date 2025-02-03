@@ -15,6 +15,10 @@
 }
 @media(max-width: 1024px){
 
+    .header__container{
+        row-gap: 25px;
+    }
+
     .logo {
         flex-grow: 123;
         order: 0;
@@ -29,7 +33,23 @@
         flex-direction: column;
     }
 
-    .catalog__list{
+    .catalog__item {
         flex-direction: column;
+    }
+
+    .content__biografia {
+        max-width: 925px;
+    }
+
+    .section__descr {
+        max-width: 925px;
+    }
+
+    .content-form {
+        flex-basis: 0;
+    }
+
+    .item-foto {
+        width: 925px;
     }
 }
