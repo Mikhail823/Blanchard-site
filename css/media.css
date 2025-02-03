@@ -1,0 +1,14 @@
+@media(max-width: 1024px){
+
+    .header__container{
+        flex-direction: column-reverse;
+    }
+
+    .gallery__wrap {
+        flex-direction: column;
+    }
+
+    .catalog__list{
+        flex-direction: column;
+    }
+}
