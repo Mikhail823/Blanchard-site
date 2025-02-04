@@ -115,8 +115,7 @@ a{
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: -3px;
-    
+    margin-bottom: -3px;    
 }
 
 .nav{
@@ -224,13 +223,11 @@ a{
     margin-bottom: 73px;
 }
 
-.section__title{
-    
+.about__title{    
     margin-bottom: 20px;
     font-weight: 400;
     font-size: 48px;
     color: #333;
-
 }
 
 .section__descr{
@@ -252,7 +249,7 @@ a{
     background-size:  100% 100%; 
 }
 
-.gallery-title{
+.gallery__title{
     margin-bottom: 23px;
     font-weight: 400;
     font-size: 48px;
@@ -355,8 +352,11 @@ a{
     gap: 50px;
 }
 
-.catalog-title{
+.catalog__title{
     margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 48px;
+    color: #333;
 }
 
 .catalog-descr{
@@ -403,6 +403,12 @@ a{
     margin-bottom: 80px;
 }
 
+.events__title{
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 48px;
+    color: #333;
+}
 .events__list{
     display: -webkit-box;
     display: -ms-flexbox;
