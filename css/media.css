@@ -35,6 +35,7 @@
 
     .catalog__item {
         flex-direction: column;
+        width: 925px;
     }
 
     .content__biografia {
@@ -52,4 +53,21 @@
     .item-foto {
         width: 925px;
     }
+
+    .evants__content{
+        padding: 14px 34px 49px 34px;
+    }
+
+    .events__afisha {
+        text-align: end;
+        align-self: end;
+    }
+
+    .evants__title {
+        letter-spacing: -2.1px;
+    }
+    .project-descr {
+        max-width: 925px;
+    }
+
 }
