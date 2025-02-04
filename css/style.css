@@ -69,8 +69,8 @@ a{
 /*****GLOBAL*****/
 .container{
     width: 100%;
-    max-width: 1600px;
-    padding: 0 32px;
+    max-width: 1800px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -78,7 +78,6 @@ a{
     list-style: none;
     margin: 0;
     padding: 0;
-    background-color: w 
 }
 
 .btn{
@@ -102,7 +101,9 @@ a{
 
 .logo{
     display: block;
-    flex-grow: 0.5;
+    -webkit-box-flex: 0.5;
+        -ms-flex-positive: 0.5;
+            flex-grow: 0.5;
 }
 
 .header__container{
@@ -119,8 +120,11 @@ a{
 }
 
 .nav{
-    flex-grow: 0.5;
-    flex-shrink: 0;
+    -webkit-box-flex: 0.5;
+        -ms-flex-positive: 0.5;
+            flex-grow: 0.5;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
 }
 
 .nav__list{
@@ -139,6 +143,8 @@ a{
     text-align: center;
     color: #fff;
     text-decoration: none;
+    -webkit-transition: background-color 0.4s step-end, color 0.4s linear;
+    -o-transition: background-color 0.4s step-end, color 0.4s linear;
     transition: background-color 0.4s step-end, color 0.4s linear;
 }
 
@@ -157,7 +163,9 @@ a{
 }
 
 .header__search{
-    flex-grow: 0.5;
+    -webkit-box-flex: 0.5;
+        -ms-flex-positive: 0.5;
+            flex-grow: 0.5;
 }
 
 
@@ -205,6 +213,8 @@ a{
     text-align: center;
     color: #fff;
     background: #9d5cd0;
+    -webkit-transition: background-color 0.3s linear, outline 0.3s linear;
+    -o-transition: background-color 0.3s linear, outline 0.3s linear;
     transition: background-color 0.3s linear, outline 0.3s linear;
 }
 
@@ -257,8 +267,12 @@ a{
 }
 
 .gallery__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .gallery__list{
@@ -278,9 +292,13 @@ a{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    align-items: end;
-    flex-shrink: 0;
-    flex-basis: 408px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-endss;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -ms-flex-preferred-size: 408px;
+        flex-basis: 408px;
 }
 
 .form-checkbox{
@@ -440,8 +458,12 @@ a{
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 16px 50px 48px 50px;
-    align-items: baseline;
-    flex-grow: 1;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
 }
 
 .evants__photo{
@@ -532,7 +554,8 @@ a{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 40px;
     -webkit-box-align: center;
         -ms-flex-align: center;

@@ -1,11 +1,9 @@
 
 @media(max-width: 1440px){
 
-    .container{
-        padding: 0 50px;
-    }
     .header__container{
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 
     .nav__list{
@@ -13,13 +11,18 @@
     }
 
     .gallery__wrap {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         row-gap: 30px;
     }
 
 
 }
 @media(max-width: 1024px){
+
+    .container{
+        padding: 0 46px;
+    }
 
     .header {
         padding: 31px 0;
@@ -35,13 +38,21 @@
     }
 
     .logo {
-        flex-grow: 123;
-        order: 0;
+        -webkit-box-flex: 123;
+            -ms-flex-positive: 123;
+                flex-grow: 123;
+        -webkit-box-ordinal-group: 1;
+            -ms-flex-order: 0;
+                order: 0;
     }
 
     .nav {
-        flex-grow: 0.5;
-        order: 3;
+        -webkit-box-flex: 0.5;
+            -ms-flex-positive: 0.5;
+                flex-grow: 0.5;
+        -webkit-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+                order: 3;
     }
 
     .content-container{
@@ -61,23 +72,33 @@
     }
 
     .gallery__wrap {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .gallery__title {
         margin-bottom: 15px;
     }
 
-    .catalog-title {
-        margin-bottom: 23px;
+    .catalog__title {
+        margin-bottom: 17px;
     }
 
     .catalog-descr{
-        width: 925px;
+        max-width: 925px;
+    }
+
+    .catalog__list{
+        gap: 51px
     }
 
     .catalog__item {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         width: 925px;
         gap: 28px;
     }
@@ -95,7 +116,8 @@
     }
 
     .content-form {
-        flex-basis: 0;
+        -ms-flex-preferred-size: 0;
+            flex-basis: 0;
     }
 
     .item-foto {
@@ -108,7 +130,8 @@
 
     .events__afisha {
         text-align: end;
-        align-self: end;
+        -ms-flex-item-align: end;
+            align-self: end;
     }
 
     .evants__title {
