@@ -390,9 +390,11 @@ a{
     color: #333;
 }
 
-.item-foto{
+.item__photo{
     -o-object-fit: contain;
-       object-fit: contain;
+       object-fit: cover;
+       margin: 0;
+       padding: 0;
 }
 .content__title{
     margin-bottom: 15px;

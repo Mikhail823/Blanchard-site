@@ -209,3 +209,143 @@
     }
 
 }
+
+@media(max-width: 992px){
+    .nav__list {
+        gap: 84px;
+    }
+
+    .section__descr {
+        max-width: 860px;
+    }
+
+
+    .catalog-descr {
+        max-width: 860px;
+    }
+
+    .catalog__item {
+        width: 860px;
+    }
+
+    .project-descr {
+        max-width: 860px;
+    }
+
+}
+
+@media(max-width: 768px){
+    .header {
+        padding: 28px 0;
+    }
+
+    .nav__list {
+        gap: 43px;
+    }
+
+    .hero {
+        padding-top: 89px;
+        padding-bottom: 86px;
+    }
+
+    .content-container {
+        max-width: 600px;
+    }
+
+    .contant-descr {
+        max-width: 557px;
+        margin-bottom: 130px;
+    }
+
+    .section__descr {
+        max-width: 666px;
+    }
+
+    .gallery__title {
+        margin-bottom: 20px;
+    }
+
+    .gallery__list {
+        gap: 34px;
+    }
+
+    .item__photo{
+           height: 200px;
+           width: 200px;
+    }
+
+    .gallery {
+        padding-bottom: 79px;
+    }
+
+    .catalog__title {
+        margin-bottom: 20px;
+    }
+
+    .catalog__item {
+        width: 668px;
+    }
+
+    .catalog-descr {
+        margin-bottom: 38px;
+    }
+
+    .content__data {
+        margin-bottom: 6px;
+    }
+
+    .events__list {
+        flex-direction: column;
+        --offset: 0;
+    }
+
+    .card__title {
+        max-width: 486px;
+        margin-bottom: 14px;
+    }
+
+    .evants__descr {
+        margin-bottom: 52px;
+        word-spacing: -0.9px;
+    }
+
+    .project__title {
+        margin-bottom: 24px;
+    }
+
+    .project-descr {
+        max-width: 658px;
+        margin-bottom: 28px;
+    }
+
+    .partner-wrapp {
+        margin-top: 29px;
+    }
+
+    .project {
+        margin-bottom: 77px;
+    }
+
+    .input-center {
+        padding-right: 80px;
+        padding-left: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .shourum-container {
+        gap: 26px;
+    }
+
+    .shourum_form {
+        flex-wrap: wrap;
+        row-gap: 8px;
+    }
+
+    .btn-input {
+        padding: 13px 31px;
+    }
+
+    
+
+}
