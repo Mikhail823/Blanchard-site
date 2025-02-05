@@ -104,7 +104,7 @@
     }
 
     .content__biografia {
-        max-width: 925px;
+        max-width: 920px;
     }
 
     .section__descr {
@@ -125,20 +125,87 @@
     }
 
     .evants__content{
-        padding: 14px 34px 49px 34px;
+        padding: 14px 28px 49px 37px;
+    }
+
+    .events__title{
+        margin-bottom: 20px;
     }
 
     .events__afisha {
         text-align: end;
         -ms-flex-item-align: end;
             align-self: end;
+            line-height: 130%;
+        margin-bottom: 4px;    
     }
 
-    .evants__title {
-        letter-spacing: -2.1px;
+    .card__title {
+        margin-bottom: 5px;
+        letter-spacing: -0.9px;
+        line-height: 33px;
+    }
+
+    .evants__descr{
+        margin-bottom: 20px;
     }
     .project-descr {
         max-width: 925px;
+    }
+
+    .catalog{
+        margin-bottom: 85px;
+    }
+
+    :root{
+        --gap-events: 27px;
+    }
+
+
+    .project__title{
+        margin-bottom: 22px;
+    }
+
+    .project-descr{
+        margin-bottom: 21px;
+    }
+    
+    .partner-wrapp {
+        gap: 29px;
+    }
+
+    .shourum {
+        padding-top: 45px;
+        padding-bottom: 42px;
+    }
+
+    .left-title {
+        margin-bottom: 4px;
+    }
+
+    .shourum-container {
+        gap: 25px;
+    }
+
+    .input-center {
+        padding: 15px 27px;
+    }
+
+    .btn-input {
+        padding: 13px 40px;
+    }
+
+    .left-address {
+        letter-spacing: -0.9px;
+    }
+    
+    .footer{
+        padding: 40px 0;
+    }
+
+    .social-link > svg{
+        width: 60px;
+        height: 60px;
     }
 
 }
