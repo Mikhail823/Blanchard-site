@@ -92,6 +92,12 @@ a{
     padding: 20px 40px;
 }
 
+.section__title{
+    font-weight: 400;
+    font-size: 48px;
+    color: #333;
+}
+
 /****HEADER*****/
 
 .header{
@@ -239,9 +245,6 @@ a{
 
 .about__title{    
     margin-bottom: 20px;
-    font-weight: 400;
-    font-size: 48px;
-    color: #333;
 }
 
 .section__descr{
@@ -376,9 +379,6 @@ a{
 
 .catalog__title{
     margin-bottom: 20px;
-    font-weight: 400;
-    font-size: 48px;
-    color: #333;
 }
 
 .catalog-descr{
@@ -429,9 +429,6 @@ a{
 
 .events__title{
     margin-bottom: 16px;
-    font-weight: 400;
-    font-size: 48px;
-    color: #333;
 }
 .events__list{
     display: -webkit-box;
@@ -456,9 +453,9 @@ a{
 .events__block-img{
     margin: 0;
     padding: 0;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
-
 
 .evants__content{
     height: auto;
@@ -541,12 +538,6 @@ a{
 
 .project{
     margin-bottom: 72px;
-}
-
-.project__title{
-    font-weight: 400;
-    font-size: 48px;
-    color: #333;
 }
 
 .project-descr{
@@ -736,10 +727,14 @@ a{
             justify-content: space-between;
     padding-top: 50px;
     padding-bottom: 50px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .footer__social--wrap{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 20px;
 }

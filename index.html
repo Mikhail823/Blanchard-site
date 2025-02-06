@@ -107,7 +107,7 @@
         </section>
         <section class="about">
             <div class="container about__container">
-                <h1 class="about__title">
+                <h1 class="section__title about__title">
                     О нас
                 </h1>
                 <p class="section__descr">
@@ -117,7 +117,7 @@
         </section>
         <section class="gallery">
             <div class="container gallery__container">
-                <h1 class="gallery__title">
+                <h1 class="section__title gallery__title">
                     Галерея
                 </h1>
                 <div class="gallery__wrap">
@@ -145,7 +145,8 @@
                     </div>
                     <ul class="gallery__list">                   
                         <li class="gallery__item ">
-                            <picture>                               
+                            <picture>              
+                                <source media="(max-width:320px)" srcset="img/g-1-600.png" sizes="">                 
                                 <img class="item__photo" src="img/Rectangle 70.jpg" alt="" srcset="">
                             </picture>
                         </li>
@@ -167,7 +168,7 @@
         </section>
         <section class="catalog">
             <div class="container catalog-container">
-                <h1 class="catalog__title">
+                <h1 class="section__title catalog__title">
                     Каталог
                 </h1>
                 <p class="catalog-descr">
@@ -176,6 +177,7 @@
                 <ul class="catalog__list list-reset">
                     <li class="catalog__item">
                         <picture>
+                            <source media="(max-width: 320px)" srcset="img/cat-1-320.png" sizes="">
                             <source media="(min-width: 1024px)" srcset="img/image 4.jpg" sizes="">
                             <img class="item-foto" src="img/3.jpg" alt="">
                         </picture>
@@ -196,7 +198,7 @@
                             <img class="item-foto" src="img/1.jpg" alt="">
                         </picture>
                         <div class="catalog-content">
-                            <h2 class="content__title">
+                            <h2 class="content__title name-author">
                                 Андреа дель Верроккьо
                             </h2>
                             <p class="content__data">
@@ -229,15 +231,15 @@
         </section>
         <section class="events">
             <div class="container events-container">
-                <h1 class="events__title">
+                <h1 class="section__title events__title">
                     События
                 </h1>
                 <ul class="events__list list-reset">
                     <li class="events__item"> 
                         <picture>
+                            <source media="(max-width: 320px)" srcset="img/ev-1-320.jpg" sizes="">
                             <source media="(max-width: 768px)" srcset="img/ev-1-768.jpg" sizes="">
-                            <source media="(max-width: 1024px)" srcset="img/101-1-1024.jpg" sizes="">
-                            
+                            <source media="(max-width: 1024px)" srcset="img/101-1-1024.jpg" sizes="">                            
                             <img class="events__block-img" src="img/chu.png" alt="" srcset="">
                         </picture> 
                         
@@ -260,6 +262,7 @@
                     </li>
                     <li class="events__item">
                         <picture>
+                            <source media="(max-width: 320px)" srcset="img/ev-2-320.jpg" sizes="">
                             <source media="(max-width: 768px)" srcset="img/ev-2-768.jpg" sizes="">
                             <source media="(max-width: 1024px)" srcset="img/mmoma-1-1024.jpg" sizes="">
                             <img class="events__block-img" src="img/Rectangle 101MMOMA.png" alt="" srcset="">
@@ -282,6 +285,7 @@
                     </li>
                     <li class="events__item">
                         <picture>
+                            <source media="(max-width: 320px)" srcset="img/ev-3-320.jpg" sizes="">
                             <source media="(max-width: 768px)" srcset="img/ev-3-768.jpg" sizes="">
                             <source media="(max-width: 1024px)" srcset="img/evr-1-1024.jpg" sizes="">
                             <img class="events__block-img" src="img/evr.png" alt="" srcset="">
@@ -306,7 +310,7 @@
         </section>
         <section class="project">
             <div class="container project-container">
-                <h1 class="project__title">
+                <h1 class="section__title project__title">
                     Проекты
                 </h1>
                 <p class="project-descr">
