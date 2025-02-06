@@ -467,7 +467,7 @@
     .gallery {
         padding-top: 53px;
         padding-bottom: 63px;
-        margin-bottom: 53px;
+        margin-bottom: 9px;
     }
 
     .gallery__title {
@@ -501,7 +501,7 @@
     }
 
     .content__data {
-        margin-bottom: 14px;
+        margin-bottom: 12px;
     }
 
     .catalog__list {
@@ -514,7 +514,7 @@
     }
 
     .catalog {
-        margin-bottom: 49px;
+        margin-bottom: 54px;
     }
 
     .events__title {
@@ -522,7 +522,7 @@
     }
 
     .evants__content {
-        padding: 23px 4px 47px 22px;
+        padding: 15px 17px 47px 22px;
     }
 
     .events__afisha {
@@ -542,7 +542,7 @@
     }
 
     .events {
-        margin-bottom: 59px;
+        margin-bottom: 56px;
     }
 
     .project__title {
@@ -559,7 +559,97 @@
         font-size: 18px;
     }
     .partner-wrapp{
+        
         flex-direction: column;
+        row-gap: 20px;
     }
 
+    .partner-link{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .partner-link > img {
+        width: 140px;
+        height: 40px;
+    }
+
+    .project {
+        margin-bottom: 19px;
+    }
+
+    .shourum {
+        border: none;
+        padding-bottom: 49px;
+    }
+
+    .shourum-container {
+        gap: 16px;
+    }
+
+    .left-title {
+        font-weight: 600;
+        font-size: 18px;
+        margin-bottom: -4px;
+    }
+
+    .shourum_form {
+        row-gap: 20px;
+    }
+
+    .input-center {
+        padding-right: 53px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+    }
+
+    .btn-input{
+        width: 128px;
+        height: 40px;
+        font-size: 12px;
+        text-align: center;
+    }    
+
+    .order-call{
+        visibility: hidden;
+    }
+
+    .order{
+        visibility: visible;
+    }
+
+    .rithg-title {
+        margin-bottom: 10px;
+        font-weight: 400;
+    font-size: 18px;
+    line-height: 178%;
+    }
+
+    .social__shourum--link > svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer {
+        padding: 20px 0;
+    }
+
+    .footer-container {
+        flex-direction: column-reverse;
+        row-gap: 16px;
+    }
+
+    .social-link > svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer__logo > svg {
+        width: 97px;
+        height: 22px;
+    }
 }
+
+
