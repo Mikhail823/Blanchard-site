@@ -636,10 +636,21 @@ path{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
     -webkit-box-align: center;    
         -ms-flex-align: center;    
             align-items: center;
+}
+
+.name-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phone-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .shourum_form{
@@ -662,8 +673,13 @@ path{
     background-color:  #ececec;
 }
 
-.input-phone:focus:required:invalid[type="tel"]{
+.input-phone:valid[type="tel"]{
     border: 2px solid red;
+}
+
+.input-phone:invalid[type="tel"] .error{
+    display: inline;
+    color: red;
 }
 
 
@@ -756,7 +772,6 @@ path{
 
 .social__shourum--link:hover .link-whats-app{
     opacity: 0.4;
-    fill: #30BF39;
 }
 
 .social__shourum--link:hover .link-telegram{
@@ -782,14 +797,8 @@ path{
     fill: #9D5CD0;
 }
 
-.error-input-block{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-}
-
 .error{
-    display: inline;
+    display: none;
 }
 
 /*****FOOTER*****/

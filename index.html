@@ -338,15 +338,17 @@
                     </address>
                 </div>
                 <div class="center-container">
-                     <p class="error">Не допустимый формат</p>
+                     
                     <form class="shourum_form" action="#" method="post">
-                        <input type="text" name="name" id="name" class="input-center" placeholder="Имя*">
-                        
-                          
-                            <input type="tel" name="tel" id="tel" class="input-center input-phone" placeholder="Телефон*" 
-                            required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" > 
-                        
-                        
+                        <div class="name-wrap">
+                           <input type="text" name="name" id="name" class="input-center" placeholder="Имя*"> 
+                        </div>
+                        <div class="phone-wrap">
+                            <p class="error">Не допустимый формат</p>
+                           <input type="tel" name="tel" id="tel" class="input-center input-phone" placeholder="Телефон*" 
+                            required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" >  
+                        </div>
+                                                                       
                         <button class="btn btn-input" type="submit" onclick="validatePhone()">
                             <span class="order">
                                 Заказать
@@ -437,6 +439,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jqurey-3.6.0.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
