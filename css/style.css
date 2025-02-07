@@ -100,6 +100,13 @@ picture{
     color: var(--text-color);
 }
 
+rect, 
+path{
+    -webkit-transition: fill 0.3s linear;
+    -o-transition: fill 0.3s linear;
+    transition: fill 0.3s linear;
+}
+
 /****HEADER*****/
 
 .header{
@@ -179,6 +186,10 @@ picture{
     background-color: #9d5cd0;
 }
 
+.header__search:hover svg path,
+.header__search:hover svg rect {
+    fill: #7943a4;
+}
 
 /****HERO*****/
 
@@ -230,12 +241,19 @@ picture{
     background: #9d5cd0;
     -webkit-transition: background-color 0.3s linear, outline 0.3s linear;
     -o-transition: background-color 0.3s linear, outline 0.3s linear;
-    transition: background-color 0.3s linear, outline 0.3s linear;
+    -webkit-transition: background-color 0.3s linear, outline 0.2s linear;
+    -o-transition: background-color 0.3s linear, outline 0.2s linear;
+    transition: background-color 0.3s linear, outline 0.2s linear;
+}
+
+.contant-btn:focus-visible{
+    outline-offset: 3px;
+    outline: 3px solid #d1a9f0
 }
 
 .contant-btn:hover{
     cursor: pointer;
-    outline: 5px solid #d1a9f0;;
+    outline: 5px solid #C283F3;
 }
 
 .contant-btn:active{
@@ -618,7 +636,7 @@ picture{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 20px;    
+    flex-direction: column;
     -webkit-box-align: center;    
         -ms-flex-align: center;    
             align-items: center;
@@ -636,6 +654,7 @@ picture{
     border-radius: 100px;
     padding: 17px 24px;
     outline: none;
+    transition:  background-color 0.3s linear;
 }
 
 .input-center:hover{
@@ -646,6 +665,7 @@ picture{
 .input-phone:focus:required:invalid[type="tel"]{
     border: 2px solid red;
 }
+
 
 .input-center::-webkit-input-placeholder{
     font-weight: 400;
@@ -693,6 +713,19 @@ picture{
     color: #9d5cd0;
     -ms-flex-negative: 0;
         flex-shrink: 0;
+    -webkit-transition: background-color 0.3s linear, color 0.3s linear,  outline 0.3s linear;
+    -o-transition: background-color 0.3s linear, color 0.3s linear,  outline 0.3s linear;
+    transition: background-color 0.3s linear, color 0.3s linear,  outline 0.3s linear;
+}
+
+.btn-input:focus-visible{
+    outline: 2px solid #9d5cd0;
+    outline-offset: 3px;
+}
+
+.btn-input:hover{
+    color: white;
+    background-color: #9d5cd0;
 }
 
 .order{
@@ -714,6 +747,49 @@ picture{
     display: -ms-flexbox;
     display: flex;
     gap: 20px;
+}
+.social__shourum--link{
+    -webkit-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
+    transition: opacity 1s linear;
+}
+
+.social__shourum--link:hover .link-whats-app{
+    opacity: 0.4;
+    fill: #30BF39;
+}
+
+.social__shourum--link:hover .link-telegram{
+    opacity: 0.4;
+}
+
+.social-link:focus-visible .link-vk,
+.social-link:focus-visible .link-ok,
+.social-link:focus-visible .link-ok-all{
+    fill: white;
+}
+
+
+.social-link:hover .link-vk,
+.social-link:hover .link-ok,
+.social-link:hover .link-ok-all{
+    fill: white;
+}
+
+.social-link:focus .link-vk,
+.social-link:focus .link-ok,
+.social-link:focus .link-ok-all{
+    fill: #9D5CD0;
+}
+
+.error-input-block{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.error{
+    display: inline;
 }
 
 /*****FOOTER*****/
