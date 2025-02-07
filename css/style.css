@@ -59,9 +59,12 @@ a{
     text-decoration: none;
 }
 
-
+picture{
+    width: 100%;
+}
 :root{
     --gap-events: 50px;
+    --text-color: #333;
 }
 
 
@@ -94,7 +97,7 @@ a{
 .section__title{
     font-weight: 400;
     font-size: 48px;
-    color: #333;
+    color: var(--text-color);
 }
 
 /****HEADER*****/
@@ -153,24 +156,27 @@ a{
     transition: background-color 0.4s step-end, color 0.4s linear;
 }
 
-/**.nav__link:focus{
+.nav__link:focus-visible{
+    padding: 5px;
     background-color: #9d5cd0;
     outline: none;
-}**/
+}
 
 .nav__link:hover{
     color: #9d5cd0;
 }
+
 
 .nav__link:active{
     background-color: none;
     color: #7943a4;
 }
 
-.header__search{
-    -webkit-box-flex: 0.5;
-        -ms-flex-positive: 0.5;
-            flex-grow: 0.5;
+.header__search:focus-visible{
+   
+    padding: 5px;
+    outline: none;
+    background-color: #9d5cd0;
 }
 
 
@@ -251,7 +257,7 @@ a{
     font-weight: 400;
     font-size: 16px;
     line-height: 200%;
-    color: #333;
+    color: var(--text-color);
 }
 
 /*****GALLERY*****/
@@ -386,27 +392,26 @@ a{
     font-weight: 400;
     font-size: 16px;
     line-height: 202%;
-    color: #333;
+    color: var(--text-color);
 }
 
 .item__photo{
-    -o-object-fit: contain;
-       object-fit: cover;
-       margin: 0;
-       padding: 0;
+        width: 100%;
+        -o-object-fit: contain;
+           object-fit: contain;
 }
 .content__title{
     margin-bottom: 15px;
     font-weight: 600;
     font-size: 24px;
-    color: #333
+    color: var(--text-color)
 }
 
 .content__biografia{
     font-weight: 400;
     font-size: 16px;
     line-height: 200%;
-    color: #333;
+    color: var(--text-color)
 }
 .content__data{
     margin-bottom: 15px;
@@ -492,7 +497,7 @@ a{
     line-height: 34px;
     font-weight: 600;
     font-size: 24px;
-    color: #333;
+    color: var(--text-color);
 }
 
 .evants__descr{
@@ -545,15 +550,14 @@ a{
     font-weight: 400;
     font-size: 16px;
     line-height: 200%;
-    color: #333;
+    color: var(--text-color);
 }
 
-.project-partner{
-    
+.project-partner{    
     font-weight: 600;
     font-size: 24px;
     line-height: 133%;
-    color: #333;
+    color: var(--text-color);
 }
 
 .partner-wrapp{
@@ -599,14 +603,14 @@ a{
     font-weight: 600;
     font-size: 24px;
     line-height: 133%;
-    color: #333;
+    color: var(--text-color);
 }
 
 .left-address{
     font-weight: 400;
     font-size: 16px;
     line-height: 200%;
-    color: #333;
+    color: var(--text-color);
 
 }
 
@@ -614,12 +618,9 @@ a{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 20px;
-    
-    -webkit-box-align: center;
-    
-        -ms-flex-align: center;
-    
+    gap: 20px;    
+    -webkit-box-align: center;    
+        -ms-flex-align: center;    
             align-items: center;
 }
 
@@ -695,6 +696,7 @@ a{
 }
 
 .order{
+    display: none;
     visibility: hidden;
 }
 
@@ -703,7 +705,7 @@ a{
     font-weight: 600;
     font-size: 24px;
     line-height: 133%;
-    color: #333;
+    color: var(--text-color);
     margin-bottom: 6px;
 }
 
