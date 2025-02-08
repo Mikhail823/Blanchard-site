@@ -62,6 +62,8 @@ a{
 picture{
     width: 100%;
 }
+
+
 :root{
     --gap-events: 50px;
     --text-color: #333;
@@ -116,9 +118,20 @@ path{
 
 .logo{
     display: block;
-    -webkit-box-flex: 0.5;
-        -ms-flex-positive: 0.5;
-            flex-grow: 0.5;
+    margin-right: auto;
+}
+
+.logo:focus-visible{
+    outline: 1px solid #9D5CD0;
+    outline-offset: 3px;
+}
+
+.logo:focus-visible svg path{
+    fill: #9D5CD0;
+}
+
+.logo:hover svg path {
+    fill: #9D5CD0;
 }
 
 .header__container{
@@ -152,27 +165,50 @@ path{
     gap: 96px;
 }
 
+.nav__item{
+    flex-shrink: 0;
+}
+
 .nav__link{
     font-weight: 600;
     font-size: 18px;
     text-align: center;
     color: #fff;
     text-decoration: none;
+    position: relative;
+    outline: none;
     -webkit-transition: background-color 0.4s step-end, color 0.4s linear;
     -o-transition: background-color 0.4s step-end, color 0.4s linear;
     transition: background-color 0.4s step-end, color 0.4s linear;
 }
 
-.nav__link:focus-visible{
-    padding: 5px;
-    background-color: #9d5cd0;
+.nav__link span{
+    position: relative;
+    z-index: 1;
+}
+
+.nav__link::after{
+    content: '';
+    width: calc(100% + 20px);
+    height: calc(100% + 10px);
+    background: #9d5cd0;
+    position: absolute;
+    top: -5px;
+    left: -10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s linear;
+    -o-transition: opacity 0.3s linear;
+    transition: opacity 0.3s linear;
+}
+
+.nav__link:focus-visible::after{
+    opacity: 1;
     outline: none;
 }
 
 .nav__link:hover{
     color: #9d5cd0;
 }
-
 
 .nav__link:active{
     background-color: none;
@@ -212,8 +248,7 @@ path{
 
 .content-container{
     max-width: 580px;
-}
- 
+} 
 
 .contant-title{
     margin-bottom: 20px;
@@ -346,6 +381,9 @@ path{
     font-size: 16px;
     line-height: 200%;
     color: #fff;
+    -webkit-transition: ;
+    -o-transition: ;
+    transition: ;
 }
 
 .input-checkbox{
@@ -365,6 +403,9 @@ path{
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
             flex-grow: 0;
+    -webkit-transition: border 0.3s linear outline 0.3s linear  ;
+    -o-transition: border 0.3s linear outline 0.3s linear  ;
+    transition: border 0.3s linear outline 0.3s linear  ;        
 }
 
 .input-checkbox--checked:checked+span::before{
@@ -372,6 +413,29 @@ path{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
+}
+
+.checkbox-title{
+    -webkit-transition: color 0.3s linear;
+    -o-transition: color 0.3s linear;
+    transition: color 0.3s linear;
+}
+
+.checkbox-label:focus-visible{
+    outline: 1px solid #9D5CD0  ;
+}
+
+.checkbox-title:hover {
+    color:  #9d5cd0;
+}
+
+.checkbox-label:focus-visible .input-checkbox+span::before{
+    outline: 1px solid #9d5cd0;
+    outline-offset: 4px;
+}
+
+.checkbox-label:hover .input-checkbox+span::before{
+    border: 1px solid #9d5cd0;
 }
 
 /*****CATALOG*****/
@@ -527,12 +591,44 @@ path{
 }
 
 .events__link{
+    position: relative;
     border-bottom: 1px solid #9d5cd0;
     margin-top: auto;
     font-weight: 400;
     font-size: 16px;
     line-height: 200%;
     color: #9d5cd0;
+    outline: none;
+    -webkit-transition: color 0.3s linear;
+    -o-transition: color 0.3s linear;
+    transition: color 0.3s linear;
+}
+
+.events__link span{
+    position: relative;
+    z-index: 1;
+}
+
+.events__link::after{
+    content: '';
+    position: absolute;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    top: -10px;
+    left: -10px;
+    background: #9D5CD0;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s linear;
+    -o-transition: opacity 0.3s linear;
+    transition: opacity 0.3s linear;
+    
+}
+
+.events__link:focus-visible span{
+    color: white;
+}
+.events__link:focus-visible::after{
+    opacity: 1;
 }
 
 .events-pic{
@@ -590,6 +686,15 @@ path{
     display: inline-block;
     border: 1px solid #cacaca;
     padding: 27px;
+    outline: none;
+    -webkit-transition: outline 0.3s linear, border 0.3s linear;
+    -o-transition: outline 0.3s linear, border 0.3s linear;
+    transition: outline 0.3s linear, border 0.3s linear;
+}
+
+.partner-link:focus-visible{
+    border: none;
+    outline: 1px solid #9d5cd0;
 }
 
 
@@ -642,15 +747,29 @@ path{
 }
 
 .name-wrap{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .phone-wrap{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .shourum_form{
@@ -658,6 +777,7 @@ path{
     display: -ms-flexbox;
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .input-center{    
@@ -665,12 +785,18 @@ path{
     border-radius: 100px;
     padding: 17px 24px;
     outline: none;
-    transition:  background-color 0.3s linear;
+    -webkit-transition: background-color 0.3s linear;
+    -o-transition: background-color 0.3s linear;
+    transition: background-color 0.3s linear;
+}
+
+.input-center:focus-visible{
+    background: #ECECEC;
 }
 
 .input-center:hover{
     cursor: pointer;
-    background-color:  #ececec;
+    background:  #ECECEC;
 }
 
 .input-phone:valid[type="tel"]{
@@ -749,7 +875,6 @@ path{
     visibility: hidden;
 }
 
-
 .rithg-title{
     font-weight: 600;
     font-size: 24px;
@@ -767,7 +892,16 @@ path{
 .social__shourum--link{
     -webkit-transition: opacity 1s linear;
     -o-transition: opacity 1s linear;
+    outline: none;
     transition: opacity 1s linear;
+}
+
+.social__shourum--link:focus-visible .link-whats-app{
+    opacity: 0.4;
+}
+
+.social__shourum--link:focus-visible .link-telegram{
+    opacity: 0.4;
 }
 
 .social__shourum--link:hover .link-whats-app{
@@ -830,4 +964,23 @@ path{
 
 .social-link{
     display: block;
+    outline: none;
+}
+
+.footer__logo{
+    -webkit-transition: outline 0.3s linear;
+    -o-transition: outline 0.3s linear;
+    transition: outline 0.3s linear;
+}
+
+.footer__logo:focus-visible{
+    outline: 1px solid #9d5cd0;
+    outline-offset: 5px;
+}
+.footer__logo:focus-visible svg path{
+    fill: #9d5cd0;
+}
+
+.footer__logo:hover svg path{
+    fill: #9d5cd0;
 }

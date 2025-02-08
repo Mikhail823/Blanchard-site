@@ -15,9 +15,8 @@
             flex-wrap: wrap;
         row-gap: 30px;
     }
-
-
 }
+
 @media(max-width: 1024px){
 
     .header {
@@ -83,7 +82,7 @@
     }
 
     .catalog-descr{
-        max-width: 925px;
+        max-width: 100%;
     }
 
     .catalog__list{
@@ -116,7 +115,10 @@
     }
 
     .item-foto {
-        width: 925px;
+        width: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+        height: 100%;
     }
 
     .evants__content{
@@ -207,22 +209,53 @@
 
 @media(max-width: 992px){
     .nav__list {
+        max-width: 100%;
+        overflow-x: auto;
         gap: 84px;
     }
 
     .section__descr {
-        max-width: 860px;
+        max-width: 100%;
     }
 
 
     .catalog-descr {
-        max-width: 860px;
+        max-width: 100%;
     }
 
     .project-descr {
-        max-width: 860px;
+        max-width: 100%;
     }
 
+    .shourum_form {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+
+    .order-call{
+        visibility: hidden;
+    }
+
+    .btn-input {
+        width: 128px;
+        height: 40px;
+        font-size: 12px;
+        text-align: center;
+        padding: 10px 30px;
+        flex-wrap: wrap;
+    }
+
+    .order{
+        display: inline;
+        visibility: visible;
+    }
+
+}
+
+@media(max-width: 900px){
+    .nav__list {
+        gap: 60px;
+    }
 }
 
 @media(max-width: 768px){
@@ -340,6 +373,31 @@
 
 }
 
+@media(max-width: 640px){
+    .shourum_form {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+
+    .order-call{
+        visibility: hidden;
+    }
+
+    .btn-input {
+        width: 128px;
+        height: 40px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .order{
+        display: inline;
+        visibility: visible;
+    }
+
+    
+}
+
 @media(max-width: 600px){
     .nav__link {
         font-size: 12px;
@@ -359,9 +417,16 @@
     }
 
     .content-container {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .section__descr {
@@ -370,7 +435,10 @@
     }
 
     .gallery__list {    
-        flex-direction: column;
+        -webkit-box-orient: vertical;    
+        -webkit-box-direction: normal;    
+            -ms-flex-direction: column;    
+                flex-direction: column;
     }
 
     .item__photo {
@@ -378,10 +446,15 @@
         width: auto;
     }
 
+    .shourum_form {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+
 }
 
 
-@media(max-width: 320px){
+@media(max-width: 550px){
     .container {
         padding: 0 15px;
     }
@@ -412,7 +485,6 @@
         padding-left: 19px;
         margin-bottom: 6px;
     }
-
 
     .hero {
         padding-top: 48px;
@@ -543,14 +615,25 @@
     }
     .partner-wrapp{
         
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        
+        -webkit-box-direction: normal;
+        
+            -ms-flex-direction: column;
+        
+                flex-direction: column;
         row-gap: 20px;
     }
 
     .partner-link{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-content: center;
-        justify-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         padding: 20px;
     }
 
@@ -580,6 +663,8 @@
 
     .shourum_form {
         row-gap: 20px;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 
     .input-center {
@@ -620,7 +705,10 @@
     }
 
     .footer-container {
-        flex-direction: column-reverse;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
         row-gap: 16px;
     }
 
@@ -634,5 +722,3 @@
         height: 22px;
     }
 }
-
-
