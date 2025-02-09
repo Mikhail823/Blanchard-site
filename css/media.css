@@ -7,7 +7,7 @@
     }
 
     .nav__list{
-        gap: 94px;
+        gap: 7vw;
     }
 
     .gallery__wrap {
@@ -210,8 +210,7 @@
 @media(max-width: 992px){
     .nav__list {
         max-width: 100%;
-        overflow-x: auto;
-        gap: 84px;
+        gap: 5vw;
     }
 
     .section__descr {
@@ -250,11 +249,8 @@
         visibility: visible;
     }
 
-}
-
-@media(max-width: 900px){
-    .nav__list {
-        gap: 60px;
+    picture{
+        width: 100%;
     }
 }
 
@@ -369,7 +365,7 @@
 
     .btn-input {
         padding: 13px 31px;
-    }    
+    }   
 
 }
 

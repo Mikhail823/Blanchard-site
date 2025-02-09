@@ -59,11 +59,6 @@ a{
     text-decoration: none;
 }
 
-picture{
-    width: 100%;
-}
-
-
 :root{
     --gap-events: 50px;
     --text-color: #333;
@@ -306,7 +301,7 @@ path{
 }
 
 .section__descr{
-    width: 1080px;
+    max-width: 1080px;
     font-weight: 400;
     font-size: 16px;
     line-height: 200%;
@@ -659,7 +654,7 @@ path{
 }
 
 .project-descr{
-    width: 1078px;
+    max-width: 1078px;
     margin-bottom: 31px;
     font-weight: 400;
     font-size: 16px;
