@@ -241,12 +241,8 @@
         font-size: 12px;
         text-align: center;
         padding: 10px 30px;
-        flex-wrap: wrap;
-    }
-
-    .order{
-        display: inline;
-        visibility: visible;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 
     picture{
@@ -364,20 +360,24 @@
     }
 
     .btn-input {
-        padding: 13px 31px;
+        padding: 12px 35px;
     }   
 
+}
+
+
+@media(max-width: 700px){
+    .nav{
+        overflow-x: auto;
+        max-width: 100%;
+    }
 }
 
 @media(max-width: 640px){
     .shourum_form {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-    }
-
-    .order-call{
-        visibility: hidden;
-    }
+    }   
 
     .btn-input {
         width: 128px;
@@ -386,12 +386,8 @@
         text-align: center;
     }
 
-    .order{
-        display: inline;
-        visibility: visible;
-    }
-
     
+        
 }
 
 @media(max-width: 600px){
@@ -489,7 +485,7 @@
     }
 
     .contant-descr {
-        max-width: 229px;
+        max-width: 100%;
         margin-bottom: 38px;
         font-weight: 400;
         line-height: 142%;
@@ -509,7 +505,7 @@
     }
 
     .section__descr {
-        max-width: 290px;
+        max-width: 100%;
     }
 
     .about {
@@ -535,12 +531,12 @@
     }
 
     .catalog-descr {
-        width: 290px;
+        max-width: 100%s;
         margin-bottom: 26px;
     }
 
     .content__biografia {
-        max-width: 290px;
+        max-width: 100%;
     }
 
     .catalog__item {
@@ -601,7 +597,7 @@
     }
 
     .project-descr {
-        max-width: 288px;
+        max-width: 100%;
         margin-bottom: 25px;
     }
 
@@ -681,8 +677,10 @@
     }
 
     .order{
+        display: inline;
         visibility: visible;
     }
+  
 
     .rithg-title {
         margin-bottom: 10px;
