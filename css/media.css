@@ -231,10 +231,6 @@
             flex-wrap: wrap;
     }
 
-    .order-call{
-        visibility: hidden;
-    }
-
     .btn-input {
         width: 128px;
         height: 40px;
@@ -362,7 +358,6 @@
     .btn-input {
         padding: 12px 35px;
     }   
-
 }
 
 
@@ -374,6 +369,11 @@
 }
 
 @media(max-width: 640px){
+    .content-container {
+        all: unset;
+        max-width: 100%;
+    }
+
     .shourum_form {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
@@ -384,10 +384,7 @@
         height: 40px;
         font-size: 12px;
         text-align: center;
-    }
-
-    
-        
+    }        
 }
 
 @media(max-width: 600px){
@@ -397,6 +394,7 @@
 
     .contant-title {
         font-size: 32px;
+        text-align: center;
     }
 
     .contant-descr {
@@ -409,6 +407,7 @@
     }
 
     .content-container {
+        max-width: 100%;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
@@ -668,6 +667,7 @@
     .btn-input{
         width: 128px;
         height: 40px;
+        padding: 13px 35px;
         font-size: 12px;
         text-align: center;
     }    
