@@ -231,16 +231,6 @@
             flex-wrap: wrap;
     }
 
-    .btn-input {
-        width: 128px;
-        height: 40px;
-        font-size: 12px;
-        text-align: center;
-        padding: 10px 30px;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    }
-
     picture{
         width: 100%;
     }
@@ -366,25 +356,26 @@
         overflow-x: auto;
         max-width: 100%;
     }
+
+
 }
 
-@media(max-width: 640px){
+@media(max-width: 642px){
     .content-container {
         all: unset;
         max-width: 100%;
+    }
+
+    .call {
+
+        display: none;
     }
 
     .shourum_form {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
     }   
-
-    .btn-input {
-        width: 128px;
-        height: 40px;
-        font-size: 12px;
-        text-align: center;
-    }        
+   
 }
 
 @media(max-width: 600px){
@@ -665,22 +656,12 @@
     }
 
     .btn-input{
-        width: 128px;
+        width: auto;
         height: 40px;
         padding: 13px 35px;
         font-size: 12px;
         text-align: center;
     }    
-
-    .order-call{
-        visibility: hidden;
-    }
-
-    .order{
-        display: inline;
-        visibility: visible;
-    }
-  
 
     .rithg-title {
         margin-bottom: 10px;

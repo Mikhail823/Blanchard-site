@@ -161,7 +161,8 @@ path{
 }
 
 .nav__item{
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
 }
 
 .nav__link{
@@ -769,7 +770,8 @@ path{
     display: -ms-flexbox;
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .input-center{    
@@ -860,11 +862,6 @@ path{
 .btn-input:hover{
     color: white;
     background-color: #9d5cd0;
-}
-
-.order{
-    display: none;
-    visibility: hidden;
 }
 
 .rithg-title{
