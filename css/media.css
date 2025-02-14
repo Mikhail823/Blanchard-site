@@ -366,6 +366,10 @@
         max-width: 100%;
     }
 
+    .hero__container {
+        justify-content: center;
+    }
+
     .contant-title {
         text-align: center;
     }
@@ -665,8 +669,8 @@
     .btn-input{
         width: auto;
         height: 40px;
-        padding: 13px 35px;
-        font-size: 12px;
+        padding: 10px 35px;
+        font-size: 14px;
         text-align: center;
     }    
 
